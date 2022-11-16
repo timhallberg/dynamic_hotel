@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #fb7d03;
+  --black: #000000;
+  --white: #ffffff;
+  --whitesmoke: #f5f5f5;
+  --border: #707070;
+  --stars: #ffb601;
+  --hover: #bb5f05;
+}
+
+/*General settings for fonts*/
+
+h1 {
+  font-size: 37px;
+  color: var(--primary);
+}
+h2 {
+  font-size: 29px;
+  color: var(--black);
+}
+h3 {
+  font-size: 22px;
+  color: var(--black);
+}
+p {
+  font-size: 16px;
+  color: var(--black);
+}
+
+.App {
+  font-family: sans-serif;
+  min-height: 100vh;
+}
+
+li {
+  list-style: none;
+}

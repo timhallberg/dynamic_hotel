@@ -1,0 +1,78 @@
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100vw;
+    border-top: 1px solid var(--border);
+    height: 488px;
+    background-color: var(--white);
+    color: var(--black);
+  }
+  
+  footer .column1 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 8;
+    width: 100%;
+  }
+  footer .column2 {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 8;
+    width: 100%;
+  }
+  footer .column3 {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 8;
+    width: 100%;
+  }
+  footer .column4 {
+    grid-column-start: 10;
+    grid-column-end: 11;
+    grid-row-start: 5;
+    grid-row-end: 8;
+    width: 100%;
+  }  
+
+
+.column li {
+    margin: 1rem auto auto auto;
+  }
+  
+  .column li h3 {
+    margin: 3rem auto 1rem auto;
+  }
+  
+  .column li h2 {
+    margin: 3rem auto 1rem auto;
+  }
+  
+  .h2Hotello {
+    color: var(--primary);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  #contactInformation {
+    margin: 60px auto auto auto;
+  }
+  
+  .copyright {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 10;
+    grid-row-end: auto;
+    width: 100%;
+    background-color: var(--primary);
+  }
+  
+  .copyrightText {
+    margin-top: 1.5rem;
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+  }

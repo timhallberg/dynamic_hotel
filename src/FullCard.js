@@ -11,7 +11,7 @@ const FullCard = ({ data }) => {
           .filter((card) => card.title === title)
           .map((card, index) => (
             <div key={index} className="fullCard">
-              <h1>{card.title}</h1>
+              <h1>{card.hotel_name}</h1>
               <p>{card.description}</p>
               <Link to={`/cards/nextcard/${card.title}`} >Till nästa</Link>
             </div>
