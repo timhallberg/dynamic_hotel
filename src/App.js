@@ -12,6 +12,8 @@ import Header from "./comp/Header/Header";
 import Footer from "./comp/Footer/Footer";
 import { Homepage } from "./comp/Homepage/Homepage";
 import CategoriCards from "./comp/CategoriCards/CategoriCards";
+import HotelOverview from "./comp/HotelOverview/HotelOverview";
+import Booking from "./comp/Booking/Booking";
 
 function App() {
   const categoriData = [
@@ -98,7 +100,7 @@ function App() {
       hotel_rating: "4",
       number_of_rooms: "1 rum för 2 personer",
       pool: true,
-      beach: true,
+      beach: false,
       cleaning: true,
       wifi: true,
       restaurant: true,
@@ -232,16 +234,18 @@ function App() {
 
       <Routes>
         <Route exact path="/" element={<Hero data={data} />}></Route>
-        <Route path="/cards/:title" element={<FullCard data={data} />}></Route>
+        <Route path="/cards/:title" element={<HotelOverview data={data} />}></Route>
         <Route
           path="/cards/nextcard/:title"
-          element={<NextCard data={data} />}
+          element={<Booking data={data} />
+         }
         ></Route>
         <Route
           path="/homepage"
           element={<Homepage categoriData={categoriData} />}
         ></Route>
         <Route path="/category" element={<CategoriCards data={data} />}></Route>
+        
       </Routes>
 
       <Footer />

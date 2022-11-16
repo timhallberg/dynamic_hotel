@@ -40,3 +40,78 @@ p {
 li {
   list-style: none;
 }
+
+
+
+
+  /*BUTTON*/
+/*General styling for the buttons*/
+
+
+
+.buttons{
+  margin-bottom: 32px;
+}
+
+.defaultButton {
+  background-color: var(--primary);
+  border: none;
+  border-radius: 24px;
+  width: 12rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.defaultButton:hover {
+  background-color: var(--hover);
+}
+
+.defaultButton p {
+  color: var(--black);
+ 
+  
+
+}
+
+
+
+/* Cards på startsidan */
+
+.Homecards_grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 16px;
+  padding-bottom: 16px;
+}
+
+.Homecard {
+  background-color: var(--whitesmoke);
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.MainHome {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.MainHomeGridItems {
+  grid-column-start: 3;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.Homecards_grid2 {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 1rem;
+}
+
+.border {
+  border: 2px;
+  border-color: var(--primary);
+  border-style: solid;
+}

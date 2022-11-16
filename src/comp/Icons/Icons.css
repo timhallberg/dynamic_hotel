@@ -1,0 +1,14 @@
+.iconBox{
+    background-color: var(--black);
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.iconBoxInline{
+    display: inline-block;
+ 
+}
